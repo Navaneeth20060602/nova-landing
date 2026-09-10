@@ -1,0 +1,24 @@
+.trusted {
+  padding: 40px 0 64px;
+  border-bottom: 1px solid var(--line);
+}
+
+.trusted-label {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+}
+
+.trusted-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px 44px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  color: #B9B5A9;
+}
+
+@media (max-width: 600px) {
+  .trusted-list { gap: 22px 28px; font-size: 15px; }
+}

@@ -1,0 +1,149 @@
+.hero {
+  padding: 72px 0 110px;
+  overflow: hidden;
+}
+
+.hero-row {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  font-size: clamp(40px, 5.4vw, 64px);
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.hero-sub {
+  margin-top: 22px;
+  font-size: 18px;
+  color: var(--ink-soft);
+  max-width: 480px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.hero-note {
+  margin-top: 18px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 380px;
+}
+
+.hero-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 20px 44px rgba(20, 24, 31, 0.08);
+  padding: 22px;
+}
+
+.hero-card-board {
+  width: 100%;
+  max-width: 380px;
+}
+
+.hero-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 8px;
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.hero-row-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 0;
+  font-size: 14.5px;
+  border-bottom: 1px solid var(--bg-alt);
+}
+.hero-row-item:last-child { border-bottom: none; }
+
+.hero-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex-shrink: 0;
+  color: var(--ink-soft);
+}
+
+.hero-check-done {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}
+
+.hero-row-item-risk .hero-check {
+  background: #FBEFDD;
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+.hero-row-item-risk { color: var(--accent-ink); font-weight: 500; }
+
+.hero-card-ai {
+  position: absolute;
+  right: -8px;
+  bottom: -18px;
+  width: 260px;
+  background: var(--surface-dark);
+  border-color: var(--surface-dark-line);
+  color: var(--white);
+}
+
+.hero-ai-label {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero-ai-text {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #D6D9E2;
+}
+
+.hero-ai-btn {
+  margin-top: 16px;
+  width: 100%;
+  justify-content: center;
+  padding: 10px 16px;
+  font-size: 13.5px;
+}
+
+@media (max-width: 900px) {
+  .hero-row { grid-template-columns: 1fr; }
+  .hero-visual { min-height: 320px; margin-top: 12px; }
+  .hero-card-ai { position: static; width: 100%; margin-top: 18px; }
+  .hero-card-board { max-width: 100%; }
+}
