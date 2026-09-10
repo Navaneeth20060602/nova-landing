@@ -3,7 +3,7 @@
 A responsive marketing landing page for **NOVA**, a fictional AI-powered team
 productivity platform, built for the Front-End Development Intern assignment.
 
-**Live demo:** _add your deployed URL here after deploying (see below)_
+
 **Repo:** https://github.com/Navaneeth20060602/nova-landing
 
 ## Tech stack
