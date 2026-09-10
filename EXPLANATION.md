@@ -49,7 +49,7 @@ section's own component rather than in `App.jsx`, since nothing else needs it.
 
 ## How AI tools were used
 
-Claude was used to scaffold the component and CSS files from an explicit
+Codex was used to scaffold the component and CSS files from an explicit
 design plan (colors, type, layout decided first, then built to that plan)
 and to check the result against the assignment's required sections and
 interactions checklist. Content, copy, and structural choices were directed
